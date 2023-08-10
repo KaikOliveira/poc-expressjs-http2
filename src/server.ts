@@ -9,8 +9,10 @@ const app = http2Express(express);
 
 app.use(morgan("dev"));
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
-  res.send("Hello, HTTP/2 with TypeScript!");
+  res.status(200).send("Helpcheck API");
 });
 
 useRoutes(app);

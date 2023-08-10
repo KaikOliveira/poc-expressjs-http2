@@ -22,5 +22,4 @@
     "node_modules",
     "**/*.spec.ts"
   ],
-
 }
