@@ -1,12 +1,12 @@
-import { books } from "../mocks/books";
+import { booksMock } from "../mocks/books";
 import { Book } from "./books.entity";
 
-class BooksServices {
-  private books: Book[] = books;
+const books: Book[] = booksMock;
 
-  public async getBooks() {
-    return this.books;
-  }
+function findAll() {
+  return books;
 }
 
-export const booksServices = new BooksServices();
+export const booksServices = {
+  findAll,
+};

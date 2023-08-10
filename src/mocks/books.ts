@@ -1,4 +1,4 @@
-export const books = [
+export const booksMock = [
   {
     id: 1,
     title: "The Lord of the Rings",
